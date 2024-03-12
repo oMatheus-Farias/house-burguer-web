@@ -6,6 +6,9 @@ export default {
       sans: ["Poppins", "sans-serif"],
     },
     extend: {
+      height: {
+        heightMinusHeader: "calc(100vh - 80px)",
+      },
       colors: {
         primary: "#FCBA11",
         dark: "#212529",
