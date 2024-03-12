@@ -22,13 +22,13 @@ const NavMobile = ({ handleOpenNav, openNav }) => {
         </div>
 
         <ul className="p-6 flex flex-col gap-4 font-semibold">
-          <li>
+          <li className="hover:text-primary duration-150">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="hover:text-primary duration-150">
             <Link to="/menu">Cardápio</Link>
           </li>
-          <li>
+          <li className="hover:text-primary duration-150">
             <Link to="/order">Faça seu pedido</Link>
           </li>
         </ul>

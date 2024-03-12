@@ -42,7 +42,11 @@ const HomePage = () => {
           </div>
 
           <div className="mt-10 min-w-[20.5em] max-w-[20.5em] mx-auto">
-            <img src="./hamburguer-banner.png" alt="Hamburguer Banner Image" />
+            <img
+              src="./hamburguer-banner.png"
+              alt="Hamburguer Banner Image"
+              className="hover:scale-105 duration-150"
+            />
           </div>
         </section>
       </main>
