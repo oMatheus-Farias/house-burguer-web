@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 
 const NavMobile = ({ handleOpenNav, openNav }) => {
@@ -21,9 +22,15 @@ const NavMobile = ({ handleOpenNav, openNav }) => {
         </div>
 
         <ul className="p-6 flex flex-col gap-4 font-semibold">
-          <li>Home</li>
-          <li>Cardápio</li>
-          <li>Faça seu pedido</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/menu">Cardápio</Link>
+          </li>
+          <li>
+            <Link to="/">Faça seu pedido</Link>
+          </li>
         </ul>
       </nav>
     </div>

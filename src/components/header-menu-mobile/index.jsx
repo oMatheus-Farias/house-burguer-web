@@ -1,8 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { IoMenu } from "react-icons/io5";
 
 import NavMobile from "../nav-mobile";
-
-import { IoMenu } from "react-icons/io5";
 
 const HeaderMenuMobile = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -14,9 +14,9 @@ const HeaderMenuMobile = () => {
   return (
     <>
       <header className="w-full h-20 flex items-center justify-between bg-dark px-4">
-        <button>
+        <Link to="/">
           <img src="./logo.svg" alt="Logo Hamburguer House" />
-        </button>
+        </Link>
 
         <button onClick={handleOpenNav}>
           <IoMenu size={46} color="#FCBA11" />
