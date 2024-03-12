@@ -9,7 +9,7 @@ const HomePage = () => {
   const { desktop } = useContext(ScreenSizeContext);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-screen">
       {desktop !== null ? (
         desktop ? (
           <HeaderMenuDesktop />
@@ -41,7 +41,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="mt-10 min-w-[22.5em] max-w-[22.5em] mx-auto">
+          <div className="mt-10 min-w-[20.5em] max-w-[20.5em] mx-auto">
             <img src="./hamburguer-banner.png" alt="Hamburguer Banner Image" />
           </div>
         </section>

@@ -18,7 +18,7 @@ const MenuPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-screen">
       {desktop !== null ? (
         desktop ? (
           <HeaderMenuDesktop />
