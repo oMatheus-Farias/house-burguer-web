@@ -11,7 +11,7 @@ const NavDesktop = () => {
           <Link to="/menu">Cardápio</Link>
         </li>
         <li className="hover:text-primary">
-          <Link to="/">Faça seu pedido</Link>
+          <Link to="/order">Faça seu pedido</Link>
         </li>
       </ul>
     </nav>
