@@ -5,7 +5,15 @@ export default {
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#FCBA11",
+        dark: "#212529",
+        light: "#E4E4E4",
+        white: "#FFFFFF",
+        black: "#000000",
+      },
+    },
   },
   plugins: [],
 };
