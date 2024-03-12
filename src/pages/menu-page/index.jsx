@@ -5,6 +5,7 @@ import HeaderMenuMobile from "../../components/header-menu-mobile";
 import HeaderMenuDesktop from "../../components/header-menu-desktop";
 import Footer from "../../components/footer";
 import CardItem from "../../components/card-item";
+import LoadComponent from "../../components/load-component";
 
 import { getItems } from "../../helpers/fakeApi";
 
@@ -12,10 +13,21 @@ const MenuPage = () => {
   const { desktop } = useContext(ScreenSizeContext);
 
   const [hamburguerItems, setHamburguerItems] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setHamburguerItems(getItems());
+    try {
+      setHamburguerItems(getItems());
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
   }, []);
+
+  if (loading) {
+    return <LoadComponent size={40} color="#000" />;
+  }
 
   return (
     <div className="flex flex-col min-h-screen">
