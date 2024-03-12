@@ -1,8 +1,14 @@
+import { BrowserRouter } from "react-router-dom";
+import ScreenSizeProvider from "./contexts/screen-size-context";
+import AppRoutes from "./routes/routes";
+
 const App = () => {
   return (
-    <>
-      <h1>Hamburguer House</h1>
-    </>
+    <BrowserRouter>
+      <ScreenSizeProvider>
+        <AppRoutes />
+      </ScreenSizeProvider>
+    </BrowserRouter>
   );
 };
 
