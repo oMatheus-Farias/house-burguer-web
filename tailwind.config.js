@@ -12,6 +12,7 @@ export default {
         light: "#E4E4E4",
         white: "#FFFFFF",
         black: "#000000",
+        blackTransparent: "rgba(0, 0, 0, 0.8)",
       },
     },
   },
