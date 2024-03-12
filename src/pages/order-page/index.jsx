@@ -31,7 +31,13 @@ const OrderPage = () => {
           </div>
 
           <button className="absolute top-[50%] bg-primary rounded-xl text-2xl sm:text-4xl font-black p-8 max-w-[90%] hover:scale-105 duration-150">
-            Faça seu pedido!
+            <a
+              href="https://api.whatsapp.com/send?phone=5511993879835&amp;text=Ol%C3%A1,%20Gostaria%20de%20fazer%20o%20seguinte%20pedido:"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Faça seu pedido!
+            </a>
           </button>
         </div>
       </main>
